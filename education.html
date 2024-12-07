@@ -1,0 +1,270 @@
+<html>
+ <head>
+  <title>
+   Education Background - Ronilo's InformationF
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://www.fontsquirrel.com/fonts/download/league-spartan" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .font-squirrel {
+            font-family: 'League Spartan', sans-serif;
+        }
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .hover-orange {
+            position: relative;
+            color: white;
+            transition: color 0.3s ease;
+        }
+        .hover-orange::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: orange;
+            transition: width 0.3s;
+        }
+        .hover-orange:hover {
+            color: orange;
+        }
+        .hover-orange:hover::after {
+            width: 100%;
+        }
+        .education-item {
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+        }
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            padding: 2rem 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: gray;
+            z-index: -1;
+        }
+        .timeline-item {
+            position: relative;
+            width: 50%;
+            padding-left: 2rem;
+            transition: transform 0.3s ease;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -8px;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            background: gray;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            padding-left: 2rem;
+            padding-right: 0;
+            text-align: left;
+        }
+        .timeline-item:nth-child(even)::before {
+            left: -8px;
+        }
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            padding-left: 0;
+            padding-right: 2rem;
+            text-align: right;
+        }
+        .timeline-item:nth-child(odd)::before {
+            left: auto;
+            right: -8px;
+        }
+        .timeline-item .details {
+            background: #2d3748;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+        .timeline-item img {
+            width: 32px;
+            height: 32px;
+        }
+        .timeline-item h3 {
+            font-size: 1.5rem;
+        }
+        .timeline-item p {
+            font-size: 0.875rem;
+            margin-top: 0.5rem;
+        }
+  </style>
+ </head>
+ <body class="bg-black">
+  <header class="bg-black text-white p-6 shadow-md w-full flex items-center justify-between fixed-header">
+   <div class="flex items-center">
+    <i class="fas fa-info-circle text-white text-4xl">
+    </i>
+    <h1 class="text-2xl font-bold ml-4 font-squirrel">
+     Ronilo's Information
+    </h1>
+   </div>
+   <div class="flex space-x-4">
+    <a class="bg-transparent text-white px-4 py-2 rounded hover-orange font-bold" href="index.html">
+     Home
+    </a>
+    <a class="bg-transparent text-white px-4 py-2 rounded hover-orange font-bold" href="education.html">
+     Education
+    </a>
+    <a class="bg-transparent text-white px-4 py-2 rounded hover-orange font-bold" href="skills.html">
+     Skills
+    </a>
+   </div>
+  </header>
+  <div class="container mx-auto p-6 mt-24 space-y-24">
+   <div class="header text-left py-12 flex flex-col md:flex-row md:justify-between">
+    <div>
+     <h2 class="text-7xl font-bold text-white">
+      <span class="block">
+       My
+      </span>
+      Education Background
+     </h2>
+    </div>
+    <div class="mt-6 md:mt-0 md:ml-12 text-gray-300 text-lg md:w-1/2">
+     <p>
+      My education journey has been a transformative experience, shaping me into the individual I am today. It's been a unique and personal adventure, filled with challenges and triumphs that have made me who I am. Let me share the timeline of this journey.
+     </p>
+    </div>
+   </div>
+   <div class="timeline">
+    <div class="timeline-item education-item bg-gray-800 p-6 rounded-lg">
+     <div class="flex items-center mb-6">
+      <img alt="Elementary school logo" class="w-8 h-8 rounded-full" height="32" src="https://storage.googleapis.com/a1aa/image/SktoQbpDp3LwMdCmKPeier6uatf3NSDEoL8UM6Hv2RfRUPiPB.jpg" width="32"/>
+      <div class="ml-4">
+       <h3 class="text-xl font-bold text-white">
+        Elementary School 1
+       </h3>
+       <p class="text-gray-400 text-sm mt-2">
+        Sunshine Elementary, 1998 - 2002
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="timeline-item education-item bg-gray-800 p-6 rounded-lg">
+     <div class="flex items-center mb-6">
+      <img alt="Elementary school logo" class="w-8 h-8 rounded-full" height="32" src="https://storage.googleapis.com/a1aa/image/SktoQbpDp3LwMdCmKPeier6uatf3NSDEoL8UM6Hv2RfRUPiPB.jpg" width="32"/>
+      <div class="ml-4">
+       <h3 class="text-xl font-bold text-white">
+        Elementary School 2
+       </h3>
+       <p class="text-gray-400 text-sm mt-2">
+        Greenfield Elementary, 2002 - 2004
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="timeline-item education-item bg-gray-800 p-6 rounded-lg">
+     <div class="flex items-center mb-6">
+      <img alt="Elementary school logo" class="w-8 h-8 rounded-full" height="32" src="https://storage.googleapis.com/a1aa/image/SktoQbpDp3LwMdCmKPeier6uatf3NSDEoL8UM6Hv2RfRUPiPB.jpg" width="32"/>
+      <div class="ml-4">
+       <h3 class="text-xl font-bold text-white">
+        Elementary School 3
+       </h3>
+       <p class="text-gray-400 text-sm mt-2">
+        Riverside Elementary, 2004 - 2006
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="timeline-item education-item bg-gray-800 p-6 rounded-lg">
+     <div class="flex items-center mb-6">
+      <img alt="High school logo" class="w-8 h-8 rounded-full" height="32" src="https://storage.googleapis.com/a1aa/image/9L22Rjae5GS7a6DqUZLooFB1IoUjROYPefhxZjsKO70GqHxnA.jpg" width="32"/>
+      <div class="ml-4">
+       <h3 class="text-xl font-bold text-white">
+        High School Diploma
+       </h3>
+       <p class="text-gray-400 text-sm mt-2">
+        City High School, 2006 - 2010
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="timeline-item education-item bg-gray-800 p-6 rounded-lg">
+     <div class="flex items-center mb-6">
+      <img alt="Senior high school logo" class="w-8 h-8 rounded-full" height="32" src="https://storage.googleapis.com/a1aa/image/HFapfUdfOximM0VYIAT4e6nT2wZbNnSzKYJWfi360ZUDUPiPB.jpg" width="32"/>
+      <div class="ml-4">
+       <h3 class="text-xl font-bold text-white">
+        Senior High School Diploma
+       </h3>
+       <p class="text-gray-400 text-sm mt-2">
+        Central Senior High School, 2010 - 2012
+       </p>
+      </div>
+     </div>
+    </div>
+    <div class="timeline-item education-item bg-gray-800 p-6 rounded-lg">
+     <div class="flex items-center mb-6">
+      <img alt="University logo" class="w-8 h-8 rounded-full" height="32" src="https://storage.googleapis.com/a1aa/image/ThQ8kfQbDJW9Lqk5PBLmogb5jyG1t8Zz1Ad6qfgebe9HUPiPB.jpg" width="32"/>
+      <div class="ml-4">
+       <h3 class="text-xl font-bold text-white">
+        Bachelor of Science in Computer Science
+       </h3>
+       <p class="text-gray-400 text-sm mt-2">
+        University of Technology, 2012 - 2016
+       </p>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="contact mt-24 text-center bg-gray-800 p-4 w-full">
+    <h2 class="text-3xl font-bold mb-6 text-white">
+     Contact Me
+    </h2>
+    <p class="text-lg text-gray-300">
+     If you'd like to get in touch, feel free to contact me.
+    </p>
+    <div class="flex justify-center space-x-6 mt-4">
+     <a href="https://www.facebook.com/j1hyy0" target="_blank">
+      <i class="fab fa-facebook text-white text-3xl hover:text-blue-500">
+      </i>
+     </a>
+     <a href="https://www.instagram.com/rooooniel_" target="_blank">
+      <i class="fab fa-instagram text-white text-3xl hover:text-pink-500">
+      </i>
+     </a>
+     <a href="mailto:ronilomagtubo29@gmail.com">
+      <i class="fas fa-envelope text-white text-3xl hover:text-red-500">
+      </i>
+     </a>
+      <a href="tel:+639604246141">
+      <i class="fas fa-phone text-white text-3xl hover:text-green-500">
+      </i>
+     </a>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>

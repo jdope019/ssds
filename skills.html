@@ -1,0 +1,219 @@
+<html>
+ <head>
+  <title>
+   Skills - Ronilo's Information
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://www.fontsquirrel.com/fonts/download/league-spartan" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .font-squirrel {
+            font-family: 'League Spartan', sans-serif;
+        }
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .hover-orange {
+            position: relative;
+            color: white;
+            transition: color 0.3s ease;
+        }
+        .hover-orange::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: orange;
+            transition: width 0.3s;
+        }
+        .hover-orange:hover {
+            color: orange;
+        }
+        .hover-orange:hover::after {
+            width: 100%;
+        }
+  </style>
+ </head>
+ <body class="bg-black">
+  <header class="bg-black text-white p-6 shadow-md w-full flex items-center justify-between fixed-header">
+   <div class="flex items-center">
+    <i class="fas fa-info-circle text-white text-4xl">
+    </i>
+    <h1 class="text-2xl font-bold ml-4 font-squirrel">
+     Ronilo's Information
+    </h1>
+   </div>
+   <div class="flex space-x-4">
+    <a class="bg-transparent text-white px-4 py-2 rounded hover-orange font-bold" href="index.html">
+     Home
+    </a>
+    <a class="bg-transparent text-white px-4 py-2 rounded hover-orange font-bold" href="education.html">
+     Education
+    </a>
+    <a class="bg-transparent text-white px-4 py-2 rounded hover-orange font-bold" href="skills.html">
+     Skills
+    </a>
+   </div>
+  </header>
+  <div class="container mx-auto p-6 mt-24 space-y-24">
+   <div class="header text-left py-12">
+    <h2 class="text-8xl font-bold text-white">
+     Skills
+    </h2>
+    <p class="text-xl text-gray-300 mt-4">
+     Below is a list of my technical skills and how they help me in my web development journey. Each skill is crucial in building dynamic, responsive, and user-friendly web applications.
+    </p>
+   </div>
+   <div class="skills mt-24">
+    <ul class="skills-list list-none text-white text-2xl">
+     <li class="mb-4 bg-transparent p-4 rounded-lg">
+      <div class="flex items-center">
+       <i class="fab fa-html5 text-orange-600 mr-2">
+       </i>
+       <span>
+        HTML - The backbone of any website, HTML allows me to structure content effectively and semantically.
+       </span>
+      </div>
+     </li>
+     <li class="mb-4 bg-gray-800 p-4 rounded-lg">
+      <div class="flex items-center">
+       <i class="fab fa-css3-alt text-blue-600 mr-2">
+       </i>
+       <span>
+        CSS - With CSS, I can style and layout web pages to create visually appealing and responsive designs.
+       </span>
+      </div>
+     </li>
+     <li class="mb-4 bg-transparent p-4 rounded-lg">
+      <div class="flex items-center">
+       <i class="fab fa-js text-yellow-500 mr-2">
+       </i>
+       <span>
+        JavaScript - This powerful scripting language enables me to create dynamic and interactive web experiences.
+       </span>
+      </div>
+     </li>
+     <li class="mb-4 bg-gray-800 p-4 rounded-lg">
+      <div class="flex items-center">
+       <i class="fab fa-react text-blue-500 mr-2">
+       </i>
+       <span>
+        React - A JavaScript library for building user interfaces, React helps me create fast and scalable web applications.
+       </span>
+      </div>
+     </li>
+     <li class="mb-4 bg-transparent p-4 rounded-lg">
+      <div class="flex items-center">
+       <i class="fab fa-node-js text-green-600 mr-2">
+       </i>
+       <span>
+        Node.js - This runtime environment allows me to run JavaScript on the server, enabling full-stack development.
+       </span>
+      </div>
+     </li>
+     <li class="mb-4 bg-gray-800 p-4 rounded-lg">
+      <div class="flex items-center">
+       <i class="fas fa-server text-gray-600 mr-2">
+       </i>
+       <span>
+        Express - A web application framework for Node.js, Express simplifies the development of server-side applications.
+       </span>
+      </div>
+     </li>
+     <li class="mb-4 bg-transparent p-4 rounded-lg">
+      <div class="flex items-center">
+       <i class="fas fa-database text-green-700 mr-2">
+       </i>
+       <span>
+        MongoDB - A NoSQL database, MongoDB allows me to store and manage data in a flexible, JSON-like format.
+       </span>
+      </div>
+     </li>
+     <li class="mb-4 bg-gray-800 p-4 rounded-lg">
+      <div class="flex items-center">
+       <i class="fab fa-git-alt text-red-600 mr-2">
+       </i>
+       <span>
+        Git - Version control is crucial for any project, and Git helps me track changes and collaborate with others.
+       </span>
+      </div>
+     </li>
+     <li class="mb-4 bg-transparent p-4 rounded-lg">
+      <div class="flex items-center">
+       <i class="fas fa-cogs text-gray-600 mr-2">
+       </i>
+       <span>
+        Webpack - This module bundler helps me manage and optimize my project's assets and dependencies.
+       </span>
+      </div>
+     </li>
+     <li class="mb-4 bg-gray-800 p-4 rounded-lg">
+      <div class="flex items-center">
+       <i class="fab fa-sass text-pink-600 mr-2">
+       </i>
+       <span>
+        Sass - A CSS preprocessor, Sass allows me to write more maintainable and reusable styles.
+       </span>
+      </div>
+     </li>
+     <li class="mb-4 bg-transparent p-4 rounded-lg">
+      <div class="flex items-center">
+       <i class="fab fa-bootstrap text-purple-600 mr-2">
+       </i>
+       <span>
+        Bootstrap - This front-end framework helps me quickly design and customize responsive mobile-first sites.
+       </span>
+      </div>
+     </li>
+     <li class="mb-4 bg-gray-800 p-4 rounded-lg">
+      <div class="flex items-center">
+       <i class="fas fa-code text-gray-600 mr-2">
+       </i>
+       <span>
+        jQuery - A fast, small, and feature-rich JavaScript library, jQuery simplifies HTML document traversal and manipulation.
+       </span>
+      </div>
+     </li>
+    </ul>
+   </div>
+   <div class="contact mt-24 text-center bg-gray-800 p-4 w-full">
+    <h2 class="text-3xl font-bold mb-6 text-white">
+     Contact Me
+    </h2>
+    <p class="text-lg text-gray-300">
+     If you'd like to get in touch, feel free to contact me.
+    </p>
+    <div class="flex justify-center space-x-6 mt-4">
+     <a href="https://www.facebook.com/j1hyy0" target="_blank">
+      <i class="fab fa-facebook text-white text-3xl hover:text-blue-500">
+      </i>
+     </a>
+     <a href="https://www.instagram.com/rooooniel_" target="_blank">
+      <i class="fab fa-instagram text-white text-3xl hover:text-pink-500">
+      </i>
+     </a>
+     <a href="mailto:ronilomagtubo29@gmail.com">
+      <i class="fas fa-envelope text-white text-3xl hover:text-red-500">
+      </i>
+     </a>
+      <a href="tel:+639604246141">
+      <i class="fas fa-phone text-white text-3xl hover:text-green-500">
+      </i>
+     </a>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
